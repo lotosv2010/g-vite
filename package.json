@@ -2,7 +2,7 @@
   "name": "g-vite",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "lib/cli.js",
   "bin": {
     "g-vite": "bin/g-vite.js"
   },
@@ -13,6 +13,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "chalk": "^4.1.2"
+    "chalk": "^4.1.2",
+    "connect": "^3.7.0"
   }
 }
