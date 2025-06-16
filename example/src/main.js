@@ -5,3 +5,5 @@ import { msg } from "./msg";
 console.log("createApp", createApp);
 console.log("lodash", _);
 console.log("msg", msg);
+
+document.body.appendChild(document.createTextNode(msg));
