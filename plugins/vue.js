@@ -22,6 +22,13 @@ function vue() {
     // 配置
     config(config) {
       root = config.root;
+      return {
+        define: {
+          __VUE_OPTIONS_API__: true, // 是否使用 options api
+          __VUE_PROD_DEVTOOLS__: false, // 是否使用 devtools
+          __VUE_PROD_HYDRATION_MISMATCH_DETAILS__: false, // 是否使用生产环境 mismatch details
+        }
+      }
     },
     // 加载
     async load(id) {
