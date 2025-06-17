@@ -1,9 +1,4 @@
 import { createApp } from "vue";
-import _ from "lodash";
-import { msg } from "./msg";
+import App from "/src/App.vue";
 
-console.log("createApp", createApp);
-console.log("lodash", _);
-console.log("msg", msg);
-
-document.body.appendChild(document.createTextNode(msg));
+createApp(App).mount("#app");
