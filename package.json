@@ -23,6 +23,7 @@
     "serve-static": "^2.2.0"
   },
   "dependencies": {
+    "hash-sum": "^2.0.0",
     "vue": "^3.5.16"
   }
 }
