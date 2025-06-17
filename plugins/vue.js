@@ -8,6 +8,7 @@ const {
 const fs = require("fs");
 const path = require("path");
 const hash = require("hash-sum");
+const dedent = require("dedent");
 
 // 缓存
 const descriptorCache = new Map();
@@ -27,8 +28,8 @@ function vue() {
           __VUE_OPTIONS_API__: true, // 是否使用 options api
           __VUE_PROD_DEVTOOLS__: false, // 是否使用 devtools
           __VUE_PROD_HYDRATION_MISMATCH_DETAILS__: false, // 是否使用生产环境 mismatch details
-        }
-      }
+        },
+      };
     },
     // 加载
     async load(id) {
@@ -67,7 +68,8 @@ function vue() {
             query.get("index")
           );
           return result;
-        } else { // 如果是js
+        } else {
+          // 如果是js
           // 转换js
           let result = await transformMain(code, filename, root);
           return result;
@@ -91,10 +93,10 @@ async function transformStyle(code, descriptor, index) {
     scoped: block.scoped,
   });
   let styleCode = result.code;
-  const injectCode =
-    `\nvar  style = document.createElement('style');` +
-    `\nstyle.innerHTML = ${JSON.stringify(styleCode)};` +
-    `\ndocument.head.appendChild(style);`;
+  const injectCode = dedent.withOptions({ escapeSpecialCharacters: false })`
+    var  style = document.createElement('style');
+    style.innerHTML = ${JSON.stringify(styleCode)};
+    document.head.appendChild(style);`;
   return {
     code: injectCode,
   };
