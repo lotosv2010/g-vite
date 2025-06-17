@@ -1,0 +1,14 @@
+{
+  "name": "example",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "g-vite",
+    "build": "g-vite build",
+    "preview": "g-vite preview"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "vue": "^3.5.16"
+  }
+}

@@ -14,13 +14,15 @@
   "license": "ISC",
   "devDependencies": {
     "chalk": "^4.1.2",
+    "chokidar": "^4.0.3",
     "connect": "^3.7.0",
     "es-module-lexer": "^1.7.0",
     "esbuild": "^0.25.5",
     "fs-extra": "^11.3.0",
     "magic-string": "^0.30.17",
     "resolve": "^1.22.10",
-    "serve-static": "^2.2.0"
+    "serve-static": "^2.2.0",
+    "ws": "^8.18.2"
   },
   "dependencies": {
     "dedent": "^1.6.0",
