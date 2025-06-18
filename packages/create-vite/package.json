@@ -1,0 +1,32 @@
+{
+  "name": "create-vite",
+  "version": "0.0.0",
+  "description": "g-vite create vite",
+  "keywords": [
+    "vite"
+  ],
+  "author": "Robin <lotosv2010@163.com>",
+  "homepage": "https://github.com/lotosv2010/g-vite",
+  "license": "ISC",
+  "main": "lib/create-vite.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "registry": "http://localhost:4873"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lotosv2010/g-vite.git"
+  },
+  "scripts": {
+    "test": "node ./__tests__/create-vite.test.js"
+  },
+  "bugs": {
+    "url": "https://github.com/lotosv2010/g-vite/issues"
+  }
+}

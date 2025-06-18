@@ -1,4 +1,4 @@
-const vue = require("../plugins/vue");
+const vue = require("../../plugins/vue");
 
 module.exports = {
   plugins: [vue()],
