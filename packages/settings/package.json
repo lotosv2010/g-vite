@@ -1,14 +1,11 @@
 {
-  "name": "create-vite",
+  "name": "@g-vite/settings",
   "version": "2.0.1",
-  "description": "g-vite create vite",
-  "keywords": [
-    "vite"
-  ],
+  "description": "> TODO: description",
   "author": "Robin <lotosv2010@163.com>",
-  "homepage": "https://github.com/lotosv2010/g-vite",
+  "homepage": "https://github.com/lotosv2010/g-vite#readme",
   "license": "ISC",
-  "main": "lib/create-vite.js",
+  "main": "lib/settings.js",
   "directories": {
     "lib": "lib",
     "test": "__tests__"
@@ -24,7 +21,7 @@
     "url": "git+https://github.com/lotosv2010/g-vite.git"
   },
   "scripts": {
-    "test": "node ./__tests__/create-vite.test.js"
+    "test": "node ./__tests__/@g-vite/settings.test.js"
   },
   "bugs": {
     "url": "https://github.com/lotosv2010/g-vite/issues"
