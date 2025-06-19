@@ -1,7 +1,3 @@
-'use strict';
-
-module.exports = utils;
-
-function utils() {
-  return 'Hello from utils';
-}
+exports.log = require("./log");
+exports.executeNodeScript = require("./executeNodeScript");
+exports.config = require("./config");

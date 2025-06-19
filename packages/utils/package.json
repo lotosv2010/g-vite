@@ -25,5 +25,13 @@
   },
   "bugs": {
     "url": "https://github.com/lotosv2010/g-vite/issues"
+  },
+  "dependencies": {
+    "@g-vite/settings": "workspace:^",
+    "chalk": "4",
+    "cross-spawn": "^7.0.6",
+    "fs-extra": "^11.3.0",
+    "signale": "^1.4.0",
+    "userhome": "^1.0.1"
   }
 }

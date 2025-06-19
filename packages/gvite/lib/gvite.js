@@ -1,6 +1,21 @@
+const yargs = require("yargs");
+const { hideBin } = require("yargs/helpers");
+const configCmd = require("@g-vite/config/lib/command");
+
 async function main() {
-  let argv = process.argv.slice(2);
-  console.log(argv);
+  const cli = yargs(hideBin(process.argv));
+  cli
+    .scriptName("create-gvite")
+    .usage(`Usage: create-gvite|gva <command> [options]`)
+    .demandCommand(1, "至少需要一个命令")
+    .strict()
+    .recommendCommands()
+    .command(configCmd)
+    .help()
+    .alias("help", "h")
+    .version()
+    .alias("version", "v")
+    .parse();
 }
 
 main().catch((err) => {
