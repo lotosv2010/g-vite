@@ -1,7 +1,7 @@
 // 执行命令的源代码
-exports.COMMAND_SOURCE = `
+exports.getCommandSource = (filename) => `
 const args = JSON.parse(process.argv[1]);
-const factory = require('./config');
+const factory = require('./${filename}');
 factory(args);
 `;
 

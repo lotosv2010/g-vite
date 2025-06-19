@@ -32,6 +32,7 @@
   },
   "dependencies": {
     "@g-vite/config": "workspace:^",
+    "@g-vite/create": "workspace:^",
     "yargs": "^17.7.2"
   }
 }

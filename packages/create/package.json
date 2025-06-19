@@ -25,5 +25,9 @@
   },
   "bugs": {
     "url": "https://github.com/lotosv2010/g-vite/issues"
+  },
+  "dependencies": {
+    "@g-vite/settings": "workspace:^",
+    "@g-vite/utils": "workspace:^"
   }
 }

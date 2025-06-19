@@ -1,7 +1,4 @@
-"use strict";
-
-module.exports = create;
-
-function create() {
-  return "Hello from create";
+async function factory(argv) {
+  console.log("create", argv);
 }
+module.exports = factory;

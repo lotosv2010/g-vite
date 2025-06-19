@@ -27,7 +27,14 @@ importers:
         specifier: ^1.0.1
         version: 1.0.1
 
-  packages/create: {}
+  packages/create:
+    dependencies:
+      '@g-vite/settings':
+        specifier: workspace:^
+        version: link:../settings
+      '@g-vite/utils':
+        specifier: workspace:^
+        version: link:../utils
 
   packages/create-vite: {}
 
@@ -36,6 +43,9 @@ importers:
       '@g-vite/config':
         specifier: workspace:^
         version: link:../config
+      '@g-vite/create':
+        specifier: workspace:^
+        version: link:../create
       yargs:
         specifier: ^17.7.2
         version: 17.7.2
