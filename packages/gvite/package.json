@@ -15,7 +15,8 @@
     "test": "__tests__"
   },
   "files": [
-    "lib"
+    "lib",
+    "bin"
   ],
   "publishConfig": {
     "registry": "http://localhost:4873"

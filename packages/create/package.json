@@ -11,7 +11,11 @@
     "test": "__tests__"
   },
   "files": [
-    "lib"
+    "lib",
+    "template-react",
+    "template-vue",
+    "template-vue-ts",
+    "template-react-ts"
   ],
   "publishConfig": {
     "registry": "http://localhost:4873"
