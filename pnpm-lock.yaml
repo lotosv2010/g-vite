@@ -45,8 +45,6 @@ importers:
         specifier: ^11.3.0
         version: 11.3.0
 
-  packages/create-vite: {}
-
   packages/gvite:
     dependencies:
       '@g-vite/config':
