@@ -59,7 +59,7 @@ async function factory(argv) {
   //   log.error(`not set organization name!`);
   //   return;
   // }
-  
+
   // 1.Get project name and target dir
   const packageName = await input({
     message: `Project name:`,
@@ -125,6 +125,10 @@ async function factory(argv) {
     path.join(targetDir, "package.json"),
     JSON.stringify(pkg, null, 2)
   );
+  // 6.init git
+  const { execa } = await import("execa");
+  await execa("git", ["init"], { cwd: targetDir });
+  
   log.info(`Scaffolding project in ${yellowBright(targetDir)}...`);
   log.info(
     `
